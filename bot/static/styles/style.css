@@ -1,0 +1,134 @@
+/* Стили для внешнего вида сайта бота */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 36px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+h2 {
+  margin: 0 0 10px 0;
+  font-size: 24px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+textarea {
+  /* set font size and color */
+  font-size: 16px;
+  color: #333;
+
+  /* set background and border */
+  background-color: #fff;
+  border: 1px solid #ccc;
+
+  /* set padding and margin */
+  padding: 10px;
+  margin: 10px 0;
+
+  /* set box-shadow */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+
+  /* set border-radius */
+  border-radius: 5px;
+
+  /* set resize property */
+  resize: vertical;
+}
+
+span{
+/* set font size and color */
+  font-size: 16px;
+  color: #333;
+
+  /* set background and border */
+  background-color: #fff;
+  border: 1px solid #ccc;
+
+  /* set padding and margin */
+  padding: 10px;
+  margin: 10px 0;
+
+  /* set box-shadow */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+
+  /* set border-radius */
+  border-radius: 5px;
+
+  display: flex;
+  width: 895px;
+  height: 100px;
+}
+
+button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  background-color: #4CAF50; /* Green background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 12px 30px; /* Padding */
+  text-align: center; /* Center text */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Make it an inline element */
+  font-size: 16px; /* Font size */
+  margin: 4px 2px; /* Margin */
+  cursor: pointer; /* Add a cursor on hover */
+  border-radius: 4px; /* Rounded corners */
+}
+
+button:hover {
+  background-color: #3e8e41; /* Dark green on hover */
+}
+

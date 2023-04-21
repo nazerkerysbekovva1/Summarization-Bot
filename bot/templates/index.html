@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Summarization Bot</title>
+    <link rel="stylesheet" href="{% static 'styles/style.css' %}">
+</head>
+<body>
+
+<header>
+      <h1>Summarization Bot</h1>
+      <nav>
+        <ul>
+          <li>Ұзын мәтіндердің қысқаша мазмұнын жасауға арналған бағдарлама.</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+          <form method="post">
+              {% csrf_token %}
+              <p>Мәтін енгізіңіз:</p>
+              <textarea name="input_text" rows="10" cols="100" placeholder="Мәтін...">{{ text }}</textarea>
+          <button type="submit">Кеттік</button>
+          </form>
+      </section>
+      <section>
+        <p>Қысқаша мазмұны:</p>
+          {% if summary %}
+          <span>{{ summary }}</span>
+          {% endif %}
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2023 Бот. Все права защищены.</p>
+    </footer>
+
+</body>
+</html>
